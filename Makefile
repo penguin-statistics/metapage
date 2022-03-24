@@ -1,2 +1,2 @@
 buildweb:
-	npm --prefix ./web/ run build
+	npm --prefix ./web/ install && npm --prefix ./web/ run build
