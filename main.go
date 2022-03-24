@@ -33,5 +33,5 @@ func main() {
 		})
 	})
 
-	app.Listen("127.0.0.1:8080")
+	app.Listen(conf.Address)
 }

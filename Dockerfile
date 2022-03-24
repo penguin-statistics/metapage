@@ -36,7 +36,7 @@ RUN apk add --no-cache tini
 
 COPY --from=gobuilder /app/metapagebackend /app/metapagebackend
 
-COPY --from=webbuilder /build/web/dist /app/web
+COPY --from=webbuilder /build/web/dist /app/web/dist
 
 ENTRYPOINT ["/sbin/tini", "--"]
 CMD [ "/app/metapagebackend" ]
