@@ -6,9 +6,7 @@
 
 [![License](https://img.shields.io/github/license/penguin-statistics/metapage)](https://github.com/penguin-statistics/metapage/blob/dev/LICENSE)
 [![Last Commit](https://img.shields.io/github/last-commit/penguin-statistics/metapage)](https://github.com/penguin-statistics/metapage/commits/dev)
-[![GitHub Actions Build Status](https://github.com/penguin-statistics/metapage/actions/workflows/build-image.yml/badge.svg)](https://github.com/penguin-statistics/metapage/actions/workflows/build-image.yml)
-
-![Alt](https://repobeats.axiom.co/api/embed/ae259f962b4d5fc542de420d31a237986d282765.svg "Repobeats analytics image")
+[![GitHub Actions Build Status](https://github.com/penguin-statistics/metapage/actions/workflows/build-image.yml/badge.svg)](https://github.com/penguin-statistics/metapage/actions/workflows/build.yml)
 
 A universally available and configurable meta page for the Penguin Statistics project.
 
