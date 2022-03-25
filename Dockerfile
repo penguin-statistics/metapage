@@ -24,6 +24,8 @@ COPY go.sum ./
 RUN go mod download
 COPY . .
 
+RUN apk add git
+
 # build the binary
 RUN go build -o metapagebackend .
 
