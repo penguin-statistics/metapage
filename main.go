@@ -20,7 +20,8 @@ func main() {
 	engine := html.New("./web/dist", ".html")
 
 	app := fiber.New(fiber.Config{
-		Views: engine,
+		Views:   engine,
+		GETOnly: true,
 	})
 
 	body := blackfriday.MarkdownBasic([]byte(conf.Index.Body))
@@ -31,6 +32,10 @@ func main() {
 			"Title": conf.Index.Title,
 			"Body":  template.HTML(string(body)),
 		})
+	})
+
+	app.All("*", func(c *fiber.Ctx) error {
+		return c.Redirect("https://exusiai.dev")
 	})
 
 	app.Listen(conf.Address)
